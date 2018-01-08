@@ -1,0 +1,11 @@
+[Unit]
+Description=A simple proxy for Plex and DVBLink
+
+[Service]
+Environment=
+WorkingDirectory=/home/dvb/dvbProxy/
+ExecStart=/home/dvb/dvbProxy/venv/bin/python /home/dvb/dvbProxy/dvbProxy.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
